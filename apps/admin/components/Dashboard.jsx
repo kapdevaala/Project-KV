@@ -1,9 +1,10 @@
 import { BsLayoutTextSidebarReverse } from "react-icons/bs";
+import AddProduct from "@/components/AddProduct";
 
 export default function Dashboard() {
   return (
-    <div className="w-[100%] max-w-[1500px] border-2 border-red-800 min-h-[90vh] flex justify-center   ">
-        {/* dashboard-Navbar */}
+    <div className="w-[100%] max-w-[1500px] border-2 border-red-800 min-h-[90vh] flex flex-col justify-center items-center   ">
+      {/* dashboard-Navbar */}
       <div className="w-[100%] max-w-[1500px] border-2 border-red-800 h-[80px] flex flex-row justify-evenly items-center   mt-4">
         <div className="min-w-[100px] h-[100%] flex sm:justify-start justify-center items-center border-black border-2  font-bold text-2xl text-center sm:text-4xl">
           Admin Pannel
@@ -19,6 +20,9 @@ export default function Dashboard() {
             Products
           </button>
         </div>
+      </div>
+      <div className="mt-10">
+        <AddProduct />
       </div>
     </div>
   );

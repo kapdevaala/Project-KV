@@ -8,7 +8,7 @@ const {
   getAllProducts,
   getProduct,
 } = require("../controller/Product");
-const { auth, isAdmin } = require("../controller/Auth");
+const { auth, isAdmin } = require("../middlewares/Auth");
 
 router.post("/create", isAdmin, createProduct);
 router.put("/update/:id", isAdmin, updateProduct);

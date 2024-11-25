@@ -13,10 +13,10 @@ cloudnairyconnect();
 
 app.use(cors());
 
-app.use("api/v1/auth", userRoutes);
-app.use("api/v1/cart", cartRoutes);
-app.use("api/v1/order", orderRoutes);
-app.use("api/v1/product", productRoutes);
+app.use("/api/v1/auth", userRoutes);
+app.use("/api/v1/cart", cartRoutes);
+app.use("/api/v1/order", orderRoutes);
+app.use("/api/v1/product", productRoutes);
 
 const PORT = process.env.PORT || 4000;
 database.connect();
