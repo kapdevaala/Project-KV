@@ -22,7 +22,6 @@ const Products = () => {
           throw new Error(data.message || "Failed to fetch products");
         }
       } catch (err) {
-        // @ts-expect-error
         setError(err.message);
       } finally {
         setLoading(false);
@@ -47,7 +46,6 @@ const Products = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4 border-2 border-black">
       {products.map((product) => (
-        // @ts-expect-error
         <ProductCard key={product._id} product={product} />
       ))}
     </div>

@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 
 const AddProduct = () => {
@@ -79,7 +80,7 @@ const AddProduct = () => {
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500"
             />
             {image && (
-              <img
+              <Image
                 src={image}
                 alt="Preview"
                 className="mt-4 max-w-[300px] h-auto"

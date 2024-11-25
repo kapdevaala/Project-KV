@@ -10,7 +10,7 @@ const orderRoutes = require("./routes/Order");
 const cartRoutes = require("./routes/Cart");
 const { cloudnairyconnect } = require("./config/cloudinary");
 cloudnairyconnect();
-
+app.use(express.json());
 app.use(cors());
 
 app.use("/api/v1/auth", userRoutes);
@@ -20,8 +20,6 @@ app.use("/api/v1/product", productRoutes);
 
 const PORT = process.env.PORT || 4000;
 database.connect();
-
-app.use(express.json());
 
 app.get("/", (req, res) => {
   return res.status(200).json({

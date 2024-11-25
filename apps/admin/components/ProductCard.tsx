@@ -1,4 +1,4 @@
-// @ts-expect-error
+import Image from "next/image";
 const ProductCard = ({ product }) => {
   const {
     title,
@@ -13,7 +13,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white hover:shadow-xl transition-shadow">
-      <img className="w-full h-48 object-cover" src={image} alt={title} />
+      <Image className="w-full h-48 object-cover" src={image} alt={title} />
       <div className="p-4">
         <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
         <p className="text-gray-600 mt-2 line-clamp-2">{description}</p>
