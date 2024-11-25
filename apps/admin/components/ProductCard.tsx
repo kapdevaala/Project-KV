@@ -1,4 +1,4 @@
-// @ts-ignore
+// @ts-expect-error
 const ProductCard = ({ product }) => {
   const {
     title,

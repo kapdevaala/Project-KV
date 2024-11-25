@@ -1,8 +1,6 @@
-import { BsCart2 } from "react-icons/bs";
-import { CgProfile } from "react-icons/cg";
+
 import Image from "next/image";
 import logo from "@/assets/Logo.png";
-import { BsLayoutTextSidebarReverse } from "react-icons/bs";
 
 export const Navbar = () => {
   return (
