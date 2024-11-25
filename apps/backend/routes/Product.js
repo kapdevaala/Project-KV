@@ -8,12 +8,12 @@ const {
   getAllProducts,
   getProduct,
 } = require("../controller/Product");
+const { auth, isAdmin } = require("../controller/Auth");
 
-router.post("/create", createProduct);
-router.put("/update/:id", updateProduct);
-router.delete("/delete/:id", deleteProduct);
+router.post("/create", isAdmin, createProduct);
+router.put("/update/:id", isAdmin, updateProduct);
+router.delete("/delete/:id", isAdmin, deleteProduct);
 router.get("/all", getAllProducts);
-router.get("/:id", getProduct);
-
+router.get("/:id", auth, getProduct);
 
 module.exports = router;
