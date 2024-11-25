@@ -1,5 +1,4 @@
 import Dashboard from "@/components/Dashboard";
-import { Counter } from "@/components/Counter";
 import Products from "@/components/Products";
 
 export default function DashBoard() {

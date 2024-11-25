@@ -16,7 +16,6 @@ const Products = () => {
         );
         const data = await response.json();
         console.log(data);
-        // @ts-ignore
         if (data.success == true) {
           setProducts(data.data);
         } else {

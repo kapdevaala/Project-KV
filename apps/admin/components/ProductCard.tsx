@@ -1,5 +1,5 @@
-
-const ProductCard = ({ product }: any) => {
+// @ts-ignore
+const ProductCard = ({ product }) => {
   const {
     title,
     description,
